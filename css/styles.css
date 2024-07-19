@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -6,21 +10,56 @@ body {
 
 ul {
   list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
 }
 
 a {
   text-decoration: none;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /*! --- header----- */
 
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-container {
+  display: flex;
 }
 
 .header-navigation {
+  display: flex;
+  align-items: center;
 }
 
 .header-list {
+  display: flex;
+  gap: 40px;
+  margin-right: 332px;
 }
 
 .header-item {
@@ -37,6 +76,7 @@ a {
 
 .header-logo {
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .header-logo:hover,
@@ -66,9 +106,12 @@ a {
 
 .header-address {
   font-style: normal;
+  margin-left: auto;
 }
 
 .header-address-menu {
+  display: flex;
+  gap: 40px;
 }
 
 .header-address-item {
@@ -90,6 +133,8 @@ a {
 
 .hero {
   background: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -97,8 +142,11 @@ a {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #fff;
+  max-width: 496px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -108,6 +156,15 @@ a {
   letter-spacing: 0.04em;
   color: #fff;
   background: #4d5ae5;
+  border-radius: 4px;
+  padding: 16px 32px;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+button {
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-button:hover {
@@ -118,11 +175,12 @@ a {
   background-color: #404bbf;
 }
 
-.hero-button {
-  cursor: pointer;
-}
-
 /* !------ advantages----- */
+
+.advantages {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
 
 .advantages-title-hidden {
   visibility: hidden;
@@ -134,6 +192,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 6px;
 }
 
 .advantages-text {
@@ -148,9 +207,12 @@ a {
 }
 
 .advantages-list {
+  display: flex;
+  gap: 24px;
 }
 
 .advantages-item {
+  width: calc(100% - 3 * 24px) / 4;
 }
 
 /* !----team------ */
@@ -163,6 +225,8 @@ a {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 
 .team {
@@ -170,6 +234,10 @@ a {
 }
 
 .team-list {
+  display: flex;
+  gap: 24px;
+  border-radius: 0 0 4px 4px;
+  padding-bottom: 120px;
 }
 
 .team-item {
@@ -177,6 +245,7 @@ a {
 }
 
 .team-image {
+  margin-bottom: 32px;
 }
 
 .team-subtitle {
@@ -185,6 +254,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -193,6 +263,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-bottom: 32px;
 }
 
 /* !-----portfolio----- */
@@ -208,15 +279,22 @@ a {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 
 .portfolio-list {
+  display: flex;
+  gap: 48px 24px;
+  flex-wrap: wrap;
 }
 
 .portfolio-item {
+  width: calc(100%-2 * 24) / 3;
 }
 
 .portfolio-image {
+  margin-bottom: 32px;
 }
 
 .portfolio-subtitle {
@@ -225,6 +303,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -233,12 +312,14 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-bottom: 32px;
 }
 
 /* !-----footer------ */
 
 .footer {
   background: #2e2f42;
+  padding-top: 100px;
 }
 
 .footer-logo {
@@ -263,9 +344,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  padding-bottom: 100px;
+  width: 264px;
+  margin-top: 16px;
 }
-
-/* 
-.main(
-  flex-direction:
-) */
