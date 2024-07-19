@@ -43,12 +43,14 @@ h6 {
 /*! --- header----- */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
 }
 
 .header-container {
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-navigation {
@@ -160,6 +162,9 @@ h6 {
   padding: 16px 32px;
   cursor: pointer;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 button {
@@ -182,8 +187,18 @@ button {
   padding-top: 120px;
 }
 
-.advantages-title-hidden {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .advantages-subtitle {
@@ -192,7 +207,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .advantages-text {
@@ -217,6 +232,11 @@ button {
 
 /* !----team------ */
 
+.team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -225,8 +245,7 @@ button {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team {
@@ -236,16 +255,21 @@ button {
 .team-list {
   display: flex;
   gap: 24px;
-  border-radius: 0 0 4px 4px;
+
   padding-bottom: 120px;
 }
 
 .team-item {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
 }
 
 .team-image {
   margin-bottom: 32px;
+}
+
+.team-employee {
+  /* padding: 32px 0; */
 }
 
 .team-subtitle {
@@ -254,6 +278,8 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+
+  text-align: center;
   margin-bottom: 8px;
 }
 
@@ -264,11 +290,14 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
   padding-bottom: 32px;
+  text-align: center;
 }
 
 /* !-----portfolio----- */
 
 .portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -279,8 +308,8 @@ button {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  /* padding-top: 120px; */
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -295,6 +324,12 @@ button {
 
 .portfolio-image {
   margin-bottom: 32px;
+}
+
+.portfolio-container {
+  margin: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-subtitle {
@@ -312,7 +347,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
 }
 
 /* !-----footer------ */
@@ -320,10 +355,13 @@ button {
 .footer {
   background: #2e2f42;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo:focus {
