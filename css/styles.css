@@ -116,6 +116,7 @@ h6 {
 .header-address {
   font-style: normal;
   margin-left: auto;
+  padding: 24px 0 24px;
 }
 
 .header-address-menu {
@@ -125,7 +126,7 @@ h6 {
 }
 
 .header-address-item {
-  padding: 24px 0 24px;
+  /* padding: 24px 0 24px; */
 }
 
 .header-address-link {
