@@ -64,7 +64,7 @@ h6 {
 .header-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0 24px;
+  /* padding: 24px 0 24px; */
 }
 
 .header-item {
@@ -83,6 +83,7 @@ h6 {
 .header-logo {
   color: #4d5ae5;
   margin-right: 76px;
+  padding: 24px 0 24px;
 }
 
 .header-logo:hover,
