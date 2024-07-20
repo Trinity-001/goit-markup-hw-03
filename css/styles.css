@@ -64,10 +64,11 @@ h6 {
 .header-list {
   display: flex;
   gap: 40px;
+  padding: 24px 0 24px;
 }
 
 .header-item {
-  padding: 24px 0 24px;
+  /* padding: 24px 0 24px; */
 }
 
 .logo {
